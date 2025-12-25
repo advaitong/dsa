@@ -8,13 +8,11 @@ class Solution {
 
                 if(c != '.'){
                     if(!seen.add(c + "- row" + i) || 
-                !seen.add(c + "- column" + j) || 
-                !seen.add(c + "- box" + i/3 + ":" + j/3)){
-                    return false;
+                    !seen.add(c + "- column" + j) || 
+                    !seen.add(c + "- box" + i/3 + ":" + j/3)){
+                        return false;
+                    }
                 }
-                }
-
-                
             }
         }
         return true;
